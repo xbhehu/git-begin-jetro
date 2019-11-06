@@ -1,3 +1,17 @@
+*
+  box-sizing border-box
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: "Myriad Pro", sans-serif;
+    }
+
 .header{
     width: 940px;
     height: 78px;
@@ -116,173 +130,150 @@ padding-left: 9px;
     margin-right: 20px;
     
 }
-
-.portfolio a{
-    text-decoration: none;
-    color:#e8663c;
-    font-size: 18px;
-    
-}
 .features{
-    width: 942px;
-    height: 290px;
+    width: 940px;
+    height: 253px;
     margin: 0 auto;
-    padding: 0;
-    
-    margin-top: 20px;  
-}
-.work1 button{
-    background:#e8663c;
-    color: white;
-    font-weight: 58px;
-    width: 58px;
-    height: 32px;
-    display: block;
-    font-weight: bold;
-    position: absolute;
-    left: 0px;
-    bottom:0px;
-}
-.work2 button{
-    background:#e8663c;
-    color: white;
-    font-weight: 58px;
-    width: 58px;
-    height: 32px;
-    display: block;
-    font-weight: bold;
-    position: absolute;
-    left: 0px;
-    bottom:0px;
+    margin-top: 20px;
 }
 
-.work1{
-    width: 300px;
-    height: 290px;
-    float: left;
-    
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list .list-item{
+    position: relative;
     margin-right: 20px;
-    position: relative;
+    display: block;
 }
-.work2{
-    width: 300px;
-    height: 290px;
-    float: right;
-    
-    margin: 0px;
-    position: relative;
-}
-.icon1{
-    width: 300px;
-    height: 58px;
-    
-    background: url(../img/icon.png) no-repeat center left;
-}
-.icon2{
-    width: 300px;
-    height: 58px;
-    
-    background: url(../img/icon2.png) no-repeat center left;
-}
-.icon3{
-    width: 300px;
-    height: 58px;
-    
-    background: url(../img/icon3.png) no-repeat center left;
-}
-.work1 a h2{
-    font-size: 18px;
-    margin-left: 70px;
+.list .list-item:last-child{
     margin-right: 0px;
-    padding: 0px;
-    color:#ee947c;
 }
-.work2 a h2{
+.list .list-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icon.png)no-repeat;
+    display:block;
+    width: 49px;
+    height: 49px;
+}
+.list .list-img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icon2.png)no-repeat;
+    display:block;
+    width: 49px;
+    height: 49px;
+}
+.list .list-img3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icon3.png)no-repeat;
+    display:block;
+    width: 49px;
+    height: 49px;
+}
+.list-item .list-title{
+    padding-left: 70px;
+    margin: 0px 0px;
+    color: #e8663c;
+    font-weight: bold;
     font-size: 18px;
-    margin-left: 70px;
-    margin-right: 0px;
-    padding: 0px;
-    color:#ee947c;
+    margin-bottom: 35px;
 }
-.text_content{
+.list-item .list-text{
     font-size: 12px;
-    list-style: height 1.1em;;
+    margin: 0px 0px;
+    margin-bottom: 40px;
 }
+.list-item .botton-features{
+    display: inline-block;
+    padding: 5px 10px;
+    background:#e8663c;
+    color: white;
+    text-transform: uppercase;
+}
+
 .data{
     width: 940px;
-    height: 287px;
+    height: 288px;
     margin: 0 auto;
     padding: 0;
-    margin-top: 50px;
-    background: url(../img/line.png)no-repeat right top;
-  background-size: 780px 20px;  
+    margin-top: 40px;
+    position: relative;  
+}
+.img-data{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: url(../img/Line.png);
+    width: 807px;
+    height: 19px;
+    margin: 0;
+    padding: 0;
 }
 .data h1{
     font-size: 18px;
     text-transform: uppercase;
     color:#ee947c;
 }
-
-.data1, .data2, .data3{
-    float: left;
-    width: 220px;
-    height: 241px;
-   
-    margin-right: 19px;
+.list-work{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
-.data4{
-    float: right;
-    width: 220px;
-    height: 241px;
-   
-}
-.data1{
-    background: url(../img/data1.png)no-repeat center top;
-    background-size: 100% 185px;
+.list-work .work{
     position: relative;
+    margin-right: 20px;
+    display: block;
     border: 1px solid #b9b9b9;
     border-top: 0px;
-}
-
-.data2{
-    background: url(../img/data2.png)no-repeat center top;
-background-size: 100% 185px;
-position: relative;
-border: 1px solid #b9b9b9;
-border-top: 0px;
+    margin: 0;
+    padding: 0;
 
 }
-
-.data3{
-    background: url(../img/data3.png)no-repeat center top;
-    background-size: 100% 185px;
-    position: relative;
-    border: 1px solid #b9b9b9;
-border-top: 0px;
+.list-work .work:last-child{
+    margin-right: 0px;
 }
-.data4{
-    background: url(../img/data4.png)no-repeat center top;
-    background-size: 100% 185px;
-    position: relative;
-    border: 1px solid #b9b9b9;
-border-top: 0px;
+.list-work .work .work-img1{
+ background: url(../img/data1.png) no-repeat center center;
+ width: 230px;
+ height: 190px;
+ display: block; 
 }
-.data_data{
-    display: block;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-.about{
+.list-work .work .work-img2{
+    background: url(../img/data2.png) no-repeat center center;
+    width: 230px;
+    height: 190px;
+    display: block; 
+   }
+.list-work .work .work-img3{
+    background: url(../img/data3.png) no-repeat center center;
+    width: 230px;
+    height: 190px;
+    display: block; 
+   }
+.list-work .work .work-img4{
+    background: url(../img/data4.png) no-repeat center center;
+    width: 220px;
+    height: 190px;
+    display: block; 
+   }
+.work-list .list-work .work .work-name{
     font-size: 16px;
-    color:#b9b9b9;
-    font-weight: bold;
-
+    margin: 0;
+    padding: 0;
+    color: #b9b9b9;
+    margin-top: 15px;
 }
-.data_nomber{
+.work-list .list-work .work .work-data{
     font-size: 11px;
-    color: #ee947c;
     text-transform: uppercase;
+    color: #e8663c;
 }
 .footer_row{
     background:#f3b29d;
@@ -322,4 +313,42 @@ h3{
 }
 .text_mail{
     color: #b9b9b9;
+}
+.social-container{
+    display:flex;
+}
+.social .social-container .social-list .social-img1{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../img/facebook.png);
+    margin-right: 5px;
+}
+.social .social-container .social-list .social-img2{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../img/twitter.png);
+    margin-right: 5px;
+}
+.social .social-container .social-list .social-img3{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../img/email.png);
+    margin-right: 5px;
+}
+.social .social-container .social-list .social-img4{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../img/rss.png);
+    margin-right: 5px;
+}
+.social .social-container .social-list .social-img5{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../img/vimeo.png);
+    margin-right: 5px;
 }
